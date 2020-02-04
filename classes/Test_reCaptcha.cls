@@ -2,7 +2,7 @@
 private class Test_reCaptcha {
 
   @testSetup static void init() {
-    insert new reCaptchaGoogle__c(PublicKey__c = 'public',SecretKey__c = 'private');
+    insert new reCaptchaGoogle__c(PublicKey__c = 'public',SecretKey__c = 'private', endpoint__c = '127.0.0.1');
   }
 
   @isTest static void testVerify() {
